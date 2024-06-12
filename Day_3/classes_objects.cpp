@@ -11,7 +11,6 @@ public:
     void display() { cout << "Name is :" << name << endl
                           << "Age is :" << age << endl
                           << "Salary is :" << salary << endl; }
-    
 };
 int main()
 {
@@ -23,6 +22,9 @@ int main()
     cout << e1.age << endl;
     cout << e1.salary << endl;
     e1.display();
+
+    cout << e1.name.length()<<endl;
+    cout << e1.name.size();
 
     return 0;
 }
