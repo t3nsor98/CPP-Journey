@@ -2,21 +2,26 @@
 
 using namespace std;
 
-class Person{
+class Person
+{
 
-    private:
-        string name;
-        int age;
-        int salary;
-    public:
-        void set_name(string n) { name = n; };
-        void display() { cout << "Name is :" << name << endl;};
+private:
+    string name;
+    int age;
+    int salary;
+
+public:
+    void set_name(string n) { name = n; };
+    void get_name() { cout << name << endl; };
+    void display() { cout << "Name is :" << name << endl; };
 };
-int main() {
+int main()
+{
     Person P1;
     P1.set_name("Digbijaya Lenka");
     P1.display();
 
+    P1.get_name();
 
     return 0;
 }
