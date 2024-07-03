@@ -1,31 +1,31 @@
 #include <iostream>
-#include <cstdio>
+#include <string>
 using namespace std;
 
 int main()
 {
-    // Complete the code.
     int a, b;
     string numbers[] = {"zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"};
 
-    cin >> a;
-    cin >> b;
+    // Read two integers from standard input
+    cin >> a >> b;
 
+    // Loop from a to b inclusive
     for (int i = a; i <= b; i++)
     {
-        if (i <= 9)
+        if (i >= 0 && i <= 9) // Check if i is between 0 and 9
         {
-            cout << numbers[i] << std::endl;
+            cout << numbers[i] << endl; // Print the corresponding word
         }
         else
         {
-            if (i % 2 == 0)
+            if (i % 2 == 0) // Check if the number is even
             {
-                cout << "even" << std::endl;
+                cout << "even" << endl; // Print "even"
             }
-            else
+            else // If the number is odd
             {
-                cout << "odd" << std::endl;
+                cout << "odd" << endl; // Print "odd"
             }
         }
     }
