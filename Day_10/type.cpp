@@ -9,7 +9,9 @@ int main() {
     cout<<b<<endl;
 
     cout<<a<<endl;
-
+    
+    int aNumber = 12;
+    // (float) aNumber = 12.5;
     
 
     return 0;

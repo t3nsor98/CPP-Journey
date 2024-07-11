@@ -5,7 +5,7 @@ void callByValue(int x)
 {
     x = 100; // This change won't affect the original argument
     cout<<x<<endl;
-}
+};
 
 int main()
 {

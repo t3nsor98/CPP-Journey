@@ -31,6 +31,7 @@ void display(Rectangle r)
 int main()
 {
     Rectangle r;
+    
     r.setLength(10); // Setting the length using member function
     display(r);      // Calling the friend function to display the length
     return 0;
